@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://blog.marti.mx/wp-content/uploads/2023/05/beneficios-de-spinning-jpeg.webp') no-repeat center center/cover;
+  height: 100vh; /* Toma 100% da altura da tela */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinhamento à esquerda */
+  text-align: left; /* Texto alinhado à esquerda */
+  color: white;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 600px; /* Limita a largura do texto */
+}
+
+.hero-text .hero-highlight {
+  font-size: 3rem; /* Texto maior para Black Velo */
+  line-height: 1.6;
+}
+
+.hero-highlight .highlight-dates {
+  font-size: 2.5rem; /* Texto maior para as datas */
+  font-weight: bold;
+  color: #FFE501; /* Cor amarela */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+/* Sessão de pacotes */
+.packages {
+  padding: 2rem 1rem;
+  background: #f5f5f5;
+}
+
+.packages h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.package-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+  gap: 2rem;
+  justify-content: center;
+}
+
+.package {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.package h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.package p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.button {
+  background: #FFE501;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+/* Sessão de meios de pagamento */
+.payment-methods {
+  background: #f8f9fa;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.payment-methods h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.payment-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.payment-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120px;
+  gap: 0.5rem;
+}
+
+.payment-option img {
+  max-width: 100%;
+  height: auto;
+}
+
+.payment-option p {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Rodapé */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.875rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center; /* Centraliza o texto no celular */
+    text-align: center; /* Texto centralizado */
+  }
+
+  .hero-text .hero-highlight {
+    font-size: 2.5rem;
+  }
+
+  .hero-highlight .highlight-dates {
+    font-size: 2rem; /* Texto menor para as datas */
+  }
+
+  .package-container {
+    grid-template-columns: 1fr; /* Um pacote por linha no celular */
+  }
+}
